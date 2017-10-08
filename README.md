@@ -37,7 +37,7 @@ The permissions for each role is given here, new permissions can be added or per
 #### Table - User Transaction Business
 This will be the main table (this table can be further divided into smaller granularity) the user, business, and the transaction he wises to perform on the business are all inked here offering a one stop place. This table can further contain the progress of the transaction.
 
-**3. What more can be added**
+**3. What more can be added (not an exhaustive list will add when more ideas strike)**
 
 - A table which contains the progress can be added. This progress table can be linked to User Transaction Business table to see how far the transaction has gone
 - Business listing can be further split, I have maintained a column 'business_details' which stores the meta data of the business, this can furhter be divided based on employee strength, how old the business is, its valuation, etc. 
