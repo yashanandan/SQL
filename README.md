@@ -5,7 +5,7 @@
 
 Disclaimer : I have taken a crude view of a basic database and created the schema. This may not be the best schema for the application and will need tweaking in the future, but this can certainly be the base for the database schema.
 
-**1. Choice of Database**
+### 1. Choice of Database
 
 MySQL will be my choice of database.
 - It has a rich community following, with good technical support and updates
@@ -13,7 +13,7 @@ MySQL will be my choice of database.
 - It is open source and still provides the best security, and ACID properties of DBs
 - Easy to deploy and use.
 
-**2. Schema Details**
+### 2. Schema Details
 
 #### Table - Users
 Stores the details of the users. User has to be registered in order to perform any transaction. ( Need not be logged in when searching )
@@ -39,7 +39,13 @@ The permissions for each role is given here, new permissions can be added or per
 #### Table - User Transaction Business
 This will be the main table (this table can be further divided into smaller granularity) the user, business, and the transaction he wises to perform on the business are all inked here offering a one stop place. This table can further contain the progress of the transaction.
 
-**3. What more can be added (not an exhaustive list will add when more ideas strike)**
+### 3. Analytics Use Case
+I believe ( from the little knowledge that I have ) that any DB Schema can be used for analytics, how the model reads the data is a crucial aspect. Since it is crucial the schema too becomes crucial. In the given use case the User Business Transaction table would suffice. We can get the business, user and transaction details from the same place and link 
+- Which type of company is posted by user 1. 
+- Why company 1 is always going for transaction type 1 ( we can guess this from business details )
+- Why user 2 is looking to invest in companies of type a.... etc.
+
+### 4. What more can be added (not an exhaustive list will add when more ideas strike)
 
 - A table which contains the progress can be added. This progress table can be linked to User Transaction Business table to see how far the transaction has gone
 - Business listing can be further split, I have maintained a column 'business_details' which stores the meta data of the business, this can furhter be divided based on employee strength, how old the business is, its valuation, etc. 
