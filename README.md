@@ -1,4 +1,6 @@
 # SQL
+
+- indbiz.mwb is a MySQL Workbench file, it can be downloaded from [here] (https://dev.mysql.com/downloads/workbench/).
 ## SQL Schemas for Task 1
 
 Disclaimer : I have taken a crude view of a basic database and created the schema. This may not be the best schema for the application and will need tweaking in the future, but this can certainly be the base for the database schema.
